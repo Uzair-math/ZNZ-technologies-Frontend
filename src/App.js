@@ -13,13 +13,13 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <React.Fragment>
-       <Routes>
-        <Route path="/" element={<DashBoard/>} exact/>
-        <Route path="/signup" element={<Signup/>} />
-        <Route path="/signin" element={<Signin/>} />
-      
-       
-       </Routes>
+      <Routes>
+        <Route path="/" element={<DashBoard />} exact />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
+
+        <Route path="*" element={<Signin />} />
+      </Routes>
     </React.Fragment>
   );
 }
