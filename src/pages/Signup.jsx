@@ -5,6 +5,7 @@ const Signup = () => {
   return (
     <div>
       <SignuPage/>
+      <h2>Some text</h2>
     </div>
   )
 }
